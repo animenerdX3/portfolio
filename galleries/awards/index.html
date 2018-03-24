@@ -1,0 +1,158 @@
+<!doctype html>
+<html><!-- InstanceBegin template="../../Templates/gallery/Templates/index.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+		<meta charset="utf-8">
+		<!-- InstanceBeginEditable name="doctitle" -->
+		<title>Peter Gomes | Awards</title>
+		<!-- InstanceEndEditable -->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="highslide/highslide.css" />
+		<script type="text/javascript" src="highslide/highslide.js"></script>
+		<script type="text/javascript" src="js/tabGallery.js"></script>
+		<script type="text/javascript" src="js/dropdown.js"></script>
+		<script type="text/javascript">
+   			hs.graphicsDir = 'highslide/graphics/';
+    		hs.outlineType = 'rounded-white';
+		</script>
+		<!-- InstanceBeginEditable name="head" -->
+		<!-- InstanceEndEditable -->
+	</head>
+	<body onLoad="createTabGallery()">
+		<!--HEADER-->
+		<div id="header" class="col-3"></div>
+		<!--CONTAINER-->
+		<div id="container" class="col-9 col-s-12">
+			<div id="content">
+			<!--START OF MOBILE CONTENT-->
+			<div id="mobileHeader">
+				<span id="dropmenu" onclick="openNav()">&#9776;</span>
+				<div id="mobileBanner"></div>
+			</div>
+			<!--END OF MOBILE CONTENT-->
+				<!--START OF CONTENT-->
+				<!-- InstanceBeginEditable name="header" -->
+				<h1>Awards</h1>
+				<!-- InstanceEndEditable -->
+				
+				<!--START OF GALLERY-->
+				<div id="desktopGallery">
+					<div align="center">
+						<div id="tabGalleryPlaceholder">
+						<!--GALLERY IS GENERATED HERE-->
+						</div>
+						
+					</div>
+				</div>
+				<!-- END OF GALLERY-->
+				
+				<!--START OF MOBILE GALLERY-->
+				<div class="mobileGallery">
+					<div class="gallery col-s-12">
+						<!--Photo Gallery Slides -->
+						<div class="mySlides">
+							<img id="main-image" style="width:100%"/>
+						</div>
+						<!--Buttons -->
+						<button class="arrow" onclick="show_image('left')">&#10094;</button>
+						<button class="arrow arrow-right" onclick="show_image('right')">&#10095;</button>
+						<br />
+						<div id="description">
+						<!--Caption Goes Here -->
+						</div>
+					</div>
+				</div>
+				<!--JavaScript Files -->
+				
+				<!-- InstanceBeginEditable name="imageGal" -->
+				<script src="js/images.js"></script>
+				<!-- InstanceEndEditable -->
+				<script src="js/gallery.js"></script>
+				<!--END OF MOBILE GALLERY-->
+
+				<!--END OF CONTENT-->
+				
+			<ul id="nav" class="col-8">
+				<li><a href="../../home/index.html">Home</a></li>
+				<div class="dropdown">
+				  <button class="dropbtn" onclick="dropDown(1)">Academic Entries <i>▼</i></button>
+					<div class="dropdown-content" id="myDropdown1">
+							<a href="../../academic_entries/index.html#freshman">Freshman</a>
+							<a href="../../academic_entries/index.html#sophomore">Sophomore</a>
+							<a href="../../academic_entries/index.html#junior">Junior</a>
+							<a href="../../academic_entries/index.html#senior">Senior</a>
+					</div>
+			  	</div>
+			  	<div class="dropdown">
+					<button class="dropbtn" onclick="dropDown(2)">Vocational Entries <i>▼</i></button>
+			  		<div class="dropdown-content" id="myDropdown2">
+			  			<a href="../../vocational_entries/index.html#exploratory">Exploratory</a>
+						<a href="../../vocational_entries/index.html#freshman">Freshman</a>
+						<a href="../../vocational_entries/index.html#sophomore">Sophomore</a>
+						<a href="../../vocational_entries/index.html#junior">Junior</a>
+						<a href="../../vocational_entries/index.html#senior">Senior</a>
+					</div>
+			  	</div>  
+				<li><a href="../qualifications/index.html">Qualifications</a></li>
+				<li><a href="index.html">Awards</a></li>
+				<li><a href="../certifications/index.html">Certifications</a></li>
+			  	<div class="dropdown">
+		  		  <button class="dropbtn" onclick="dropDown(3)">Work Samples <i>▼</i></button>
+					<div class="dropdown-content" id="myDropdown3">
+						<a href="../../work_samples/freshman/index.html">Freshman</a>
+						<a href="../../work_samples/sophomore/index.html">Sophomore</a>
+						<a href="../../work_samples/junior/index.html">Junior</a>
+						<a href="../../work_samples/senior/index.html">Senior</a>
+					</div>
+			  	</div> 
+				<li><a href="../../competency_list/PW_Competency_List.xlsx">Competency List</a></li>
+			</ul>
+								
+			</div>
+
+			<!--Mobile Navigation-->
+			<div id="dropnav" class="overlay">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<div class="overlay-content">
+						<a href="../../home/index.html">Home</a>						
+						<a href="#" onClick="showMenu(1)">Academic Entries <i>▼</i></a>
+						<div id="mobileDrop1" class="allMobile" style="display:none;">
+							<a href="../../academic_entries/index.html#freshman">Freshman</a>
+							<a href="../../academic_entries/index.html#sophomore">Sophomore</a>
+							<a href="../../academic_entries/index.html#junior">Junior</a>
+							<a href="../../academic_entries/index.html#senior">Senior</a>
+						</div>
+						<a href="#" onClick="showMenu(2)">Vocational Entries <i>▼</i></a>
+						<div id="mobileDrop2" class="allMobile" style="display:none;">
+							<a href="../../vocational_entries/index.html#exploratory">Exploratory</a>
+							<a href="../../vocational_entries/index.html#freshman">Freshman</a>
+							<a href="../../vocational_entries/index.html#sophomore">Sophomore</a>
+							<a href="../../vocational_entries/index.html#junior">Junior</a>
+							<a href="../../vocational_entries/index.html#senior">Senior</a>
+						</div>
+						<a href="../qualifications/index.html">Qualifications</a>
+						<a href="index.html">Awards</a>
+						<a href="../certifications/index.html">Certifications</a>
+						<a href="#" onClick="showMenu(3)">Work Samples <i>▼</i></a>
+						<div id="mobileDrop3" class="allMobile" style="display:none;">
+							<a href="../../work_samples/freshman/index.html">Freshman</a>
+							<a href="../../work_samples/sophomore/index.html">Sophomore</a>
+							<a href="../../work_samples/junior/index.html">Junior</a>
+							<a href="../../work_samples/senior/index.html">Senior</a>
+						</div>
+						<a href="file:///E|/competency_list/PW_Competency_List.xlsx">Competency List</a>
+					</div>
+			</div>
+
+			<!--Javascript-->
+			<script>
+			function openNav() {
+				document.getElementById("dropnav").style.width = "100%";
+			}
+
+			function closeNav() {
+				document.getElementById("dropnav").style.width = "0%";
+			}
+			</script>
+		</div>
+	</body>
+<!-- InstanceEnd --></html>
