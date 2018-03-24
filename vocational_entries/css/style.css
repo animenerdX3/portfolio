@@ -1,0 +1,413 @@
+/*
+* COLOR SCHEME
+* Light Red: #F25348
+* Light Blue: #5983D3
+* Grey: #6E5F64
+* Black: #000000
+* White: #FFFFFF
+*/
+
+/*Columns For Desktop*/
+.col-3 {width: 25%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-12 {width: 100%;}
+
+html, #header {
+    min-height: 90% !important;
+    height: 98%;
+}
+
+/*Default Information*/
+body {
+	margin: 0, 0, 0, 0;
+    background-color: #6E5F64;
+	background-image: url(../../images/bg.jpg);
+	font-family: Baskerville Old Face;
+	background-attachment: fixed;
+}
+
+.portfolioLinks{
+	text-decoration: none;
+	color: #5983D3;
+	font-size: 16pt;
+}
+
+.portfolioLinks:hover {
+	color: #FFFFFF;
+}
+
+.description {
+	color: #FFFFFF;
+}
+
+/* Header */
+#header{
+	float: left;
+	position: fixed;
+	background-image: url(../images/header_horizontal.jpg);
+	background-size: 1500px;
+	background-position: right;
+}
+
+/* Right container */
+#container{
+	float: right;
+}
+
+/* Content */
+#content {
+	padding: 0px 6%;
+}
+
+#content h1 {
+	text-align: center;
+	font-family: Baskerville Old Face;
+}
+
+/* Desktop Navigation */
+#nav {
+	font-family: Arial;
+	text-align: center;
+	list-style-type: none;
+	position: fixed;
+	bottom: -16px;
+    padding: 0;
+}
+
+#nav li {
+    float: left;
+	background-color: #FFFFFF;
+}
+
+li a {
+    display: block;
+    color: #000000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #5983D3;
+    color: #FFFFFF;
+}
+
+.arrow {
+	position: relative;
+	top: 50%;
+	background-color: #000000;
+    border: none;
+    color: #FFFFFF;
+    padding: 4px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.arrow-right {
+	float: right;
+}
+
+/* Mobile Navigation */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+	font-family: Arial;
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #FFFFFF;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* Mobile Header: Displaying Content Only For Smartphone */
+#mobileHeader{
+	display: none;
+}
+
+#mobileBanner {
+	background-image: url(../images/header_mobile.jpg);
+	background-position: right;
+	height: 200px;
+}
+
+#dropmenu {
+	font-size:30px;
+	cursor:pointer;
+	position: fixed;
+	color: #F25348;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+	background-color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: #000000;
+    padding: 8px 16px;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: #5983D3;
+    color: #FFFFFF;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #FFFFFF;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #5983D3;
+    color: #FFFFFF;
+}
+
+.show {
+    display: block;
+}
+
+.displayNav {
+	display: initial;
+}
+
+.allMobile a{
+	font-size: 24pt;
+}
+
+/* FOR WORK SAMPLES */
+
+.docLink {
+	text-decoration: none;
+	color: #f25348;
+}
+
+.workSample {
+	line-height: 200%;
+}
+
+.endImg {
+	border: 1px solid #000000;
+	padding: 5px;
+}
+
+figure {
+	border: 1px solid #000000;
+	padding: 5px;
+}
+
+.figureleft {
+	float: left;
+}
+
+.figureright {
+	float: right;
+}
+
+figure img {
+    vertical-align: top;
+}
+figure figcaption {
+	background-color: #FFFFFF;
+    text-align: center;
+}
+
+#yearNav {
+	text-align: center;
+	width: 100%;
+}
+
+.yearLink {
+	text-decoration: none;
+	color: #F25348;
+	font-size: 18pt;
+	padding: 10px;
+	text-shadow: 3px 2px 5px #000000;
+}
+
+.yearLink:hover {
+	color: #FFFFFF;
+}
+
+.trioPictures {
+	text-align: center;
+}
+
+.trioPictures figure {
+	display: inline-block;
+}
+
+.trioPictures:after {
+	content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+.caption {
+	width: 400px;
+	padding: 5px;
+	background-color: #FFFFFF;
+}
+
+#back-top {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+}
+
+#back-top a {
+	width: 108px;
+	display: block;
+	text-align: center;
+	font-size: 11px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #FFFFFF;
+
+	/* transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover {
+	color: #000;
+}
+
+/* arrow icon (span tag) */
+#back-top span {
+	width: 108px;
+	height: 108px;
+	display: block;
+	margin-bottom: 7px;
+	background: #F25348 url(../images/up-arrow.png) no-repeat center center;
+
+	/* rounded corners */
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+
+	/* transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover span {
+	background-color: #5983D3;
+}
+
+/* For widths under 600 pixels: Smartphone Changes */
+@media screen and (max-width: 600px){
+	/* Columns for Smartphone */
+	.col-s-10 {width: 83.33%;}
+	.col-s-12 {width: 100%;}
+	#content {
+		padding-bottom: 0px;
+	}
+	#header{
+		display: none;
+	}
+	#nav {
+		display: none;
+	}
+	#dropmenu {
+		display: initial;
+	}
+	#mobileHeader {
+		display: initial;
+	}
+	#nav li {
+		float: none;
+	}
+
+	#nav li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 75px;
+		text-decoration: none;
+	}
+}
+
+/* For widths over 600 pixels: Anything Other Than Smartphone */
+@media screen and (min-width: 600px){
+	#content {
+		padding-bottom: 200px;
+	}
+}
+
+/* For widths under 800 pixels: Tablet Changes */
+@media screen and (max-width: 800px){
+	#content p{
+		font-size: 16pt;
+	}
+}
+
+/* For widths under 1920 pixels: XL Desktop Changes */
+@media screen and (max-width: 1920px){
+	#header{
+		background-image: url(../images/header_vertical.jpg);
+		background-size: 500px 1020px;
+	}
+}
+

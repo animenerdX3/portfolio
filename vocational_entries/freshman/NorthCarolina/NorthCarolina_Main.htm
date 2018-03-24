@@ -1,0 +1,225 @@
+<html>
+ <head>
+    <!----------------------------------------------------------------------->
+    <!-- Author: Peter Gomes                                               -->
+    <!-- Date: 4/1/15                                                      -->
+    <!-- Filename: NorthCarolina_Main.htm                                  -->
+    <!----------------------------------------------------------------------->
+<style>
+#header {
+    background-color:white;
+    color:black;
+    text-align:center;
+    padding:20px;
+}
+</style>
+    <style type="text/css">
+body { cursor: url('leaf.cur'), auto; }
+body { background-image: url(sunrise.jpg) }
+body { background-repeat: no-repeat }
+body { background-attachment: fixed; }
+</style>
+ 	<body bgcolor= "fff8dc">
+    	<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+#coolMenu,
+#coolMenu ul {
+	list-style: none;
+}
+
+#coolMenu li a {
+display: block;
+	height: 2em;
+	line-height: 2em;
+	padding: 0 1.5em;
+	text-decoration: none;
+}
+#coolMenu ul {
+	POSITION: absolute;
+	display: none;
+z-index: 999;
+}
+#coolMenu ul li a {
+	width: 200px;
+}
+
+/* Main menu
+------------------------------------------*/
+#coolMenu {
+	font-family: Arial;
+	font-size: 12px;
+	BACKGROUND: #ffdead;
+}
+#coolMenu > li > a {
+	color: #000000;
+	font-weight: bold;
+}
+#coolMenu > li:hover > a {
+	background: #ffffff;
+	color: #000000;
+}
+
+/* Submenu
+------------------------------------------*/
+#coolMenu ul {
+	background: #ffffff;
+}
+#coolMenu ul li a {
+	color: #000000;
+}
+#coolMenu ul li:hover a {
+	background: #000000;
+}
+
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+  <title>North Carolina | Main</title>
+     </head>
+      <script type="text/javascript">
+function rC(nam) {var tC = document.cookie.split('; '); for (var i = tC.length - 1; i >= 0; i--) {var x = tC[i].split('='); if (nam == x[0]) return unescape(x[1]);} return '~';} function wC(nam,val) {document.cookie = nam + '=' + escape(val);} function lC(nam,pg) {var val = rC(nam); if (val.indexOf('~'+pg+'~') != -1) return false; val += pg + '~'; wC(nam,val); return true;} function firstTime(cN) {return lC('pWrD4jBo',cN);} function thisPage() {var page = location.href.substring(location.href.lastIndexOf('\/')+1); pos = page.indexOf('.');if (pos > -1) {page = page.substr(0,pos);} return page;}
+function start() {
+   if (firstTime(thisPage())) {
+      alert('Welcome to North Carolina!');
+   }
+
+}
+onload = start;
+$(function(){     
+$('#coolMenu').find('> li').hover(function(){         
+$(this).find('ul')         
+.removeClass('noJS')         
+.stop(true, true).slideToggle('fast');     
+}); 
+});
+
+var slideimages = new Array() 
+slideimages[0] = new Image()
+slideimages[0].src = "autumn.jpg"
+slideimages[1] = new Image()
+slideimages[1].src = "sports.jpg"
+slideimages[2] = new Image()
+slideimages[2].src = "scenery.jpg"
+
+function getMessage() 
+{ 
+var ar = new Array(20) 
+ar[0] = "Andrew Jackson was from North Carolina." 
+ar[1] = "Babe Ruth hit the first professional Home Run in Fayetteville." 
+ar[2] = "The first state art museum is located in Raleigh." 
+ar[3] = "North Carolina has Mount Mitchell, the largest mountain of Eastern U.S."
+ar[4] = "The first English child was born in Roanoke."
+ar[5] = "The state motto is 'Esse quam videri', or 'To be, rather than to seem'."
+ar[6] = "As of 2014, 9.944 million people live in North Carolina."
+var now = new Date() 
+var sec = now.getSeconds() 
+alert("Fact:\n\n" + ar[sec % 7]) 
+} 
+</script>
+</head>
+<div align="center">
+        <img src="images/banner.jpg" width="2600" height="200">
+</div>
+<body link="black" vlink="black" alink="black">
+<ul id="coolMenu">
+    <li><a href="NorthCarolina_Main.htm">Home</a></li>
+
+    <li><a href="NorthCarolina_AboutWebsite.htm">About</a></li>
+    <li>
+	<ul class="noJS">
+            <li><a href="NorthCarolina_About.htm">History</a></li>
+            <li><a href="NorthCarolina_Geography.htm">Geography</a></li>
+            <li><a href="NorthCarolina_Population.htm">Population</a></li>
+	    <li><a href="NorthCarolina_Government.htm">Government</a></li>
+            <li><a href="NorthCarolina_Symbols.htm">Official Symbols </a></li>
+        </ul>
+    </li>
+    <li><a href="NorthCarolina_Images.htm">Images</a></li>
+    <li><a href="NorthCarolina_Trivia.htm">Trivia</a></li>
+	<li><a href="NorthCarolina_About.htm">History</a></li>
+            <li><a href="NorthCarolina_Geography.htm">Geography</a></li>
+            <li><a href="NorthCarolina_Population.htm">Population</a></li>
+	    <li><a href="NorthCarolina_Government.htm">Government</a></li>
+            <li><a href="NorthCarolina_Symbols.htm">Official Symbols </a></li>
+	<li><a href="NorthCarolina_Links.htm">Learn More</a></li>
+</ul>
+  <hr color = "#000000" size = "1" width = "100%">
+<br> 
+<center>
+<table width="20%" style="width:" "20%" bgcolor="#FFFFFF" border="10">
+ 		<tr>
+ <th>
+
+ <div align="center">
+ 	Get Random Facts!
+    </div>
+ </th>
+ 	</tr>
+ <tr>
+<br> <td>
+<div align="center">
+<button type="button" onclick="getMessage() ">Click For Random Fact</button>
+</div>
+	</td>
+</tr>
+</table>
+</center>
+  	<br> <br> 
+
+<table width="49%" style="width:" "20%" bgcolor="#FFFFFF" border="10">
+ 		<tr>
+ <th>
+
+ <div align="left">
+ 	North Carolina
+    </div>
+ </th>
+ 	</tr>
+ <tr>
+<br> <td>	
+    This website is about the state of North Carolina. Learn about the history one of the oldest states in the United States. Dig deep into the Geography, Trivia, Population, and even take a look at the scenery. I hope you enjoy your stay in the virtual North Carolina.
+	</td>
+</tr>
+</table>
+
+<br>
+ <div align="right">
+	<a href="#"><img src="autumn.jpg" id="slide" width=500 height=300 /></a>
+
+<script type="text/javascript">
+var step = 0
+var whichimage = 0
+
+function slideit()
+{
+ if (!document.images)
+  return
+ document.getElementById('slide').src = slideimages[step].src
+ whichimage = step
+ if (step<2)
+  step++
+ else
+  step=0
+ setTimeout("slideit()",2500)
+}
+
+slideit()
+
+</script>
+</div>
+<br>
+  <hr color = "#000000" size = "3" width = "100%">
+<br> <br>
+	<p>
+	<div id="header">
+<h2>Made by Peter Gomes, Freshman in Computer Information Technology.</h2>
+</p>
+</body>
+    </html>
