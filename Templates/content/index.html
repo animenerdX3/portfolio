@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Peter Gomes | Content</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript" src="js/dropdown.js"></script>
+	</head>
+	<body>
+		<!--HEADER-->
+		<div id="header" class="col-3"></div>
+		<!--CONTAINER-->
+		<div id="container" class="col-9 col-s-12">
+			<div id="content">
+			<!--START OF MOBILE CONTENT-->
+			<div id="mobileHeader">
+				<span id="dropmenu" onclick="openNav()">&#9776;</span>
+				<div id="mobileBanner"></div>
+			</div>
+			<!--END OF MOBILE CONTENT-->
+				<!--START OF CONTENT-->
+				<h1>Content</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In tellus integer feugiat scelerisque varius morbi enim nunc. Proin sed libero enim sed faucibus turpis. Id interdum velit laoreet id donec ultrices tincidunt arcu. Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc. Semper viverra nam libero justo laoreet sit amet cursus. Cursus turpis massa tincidunt dui ut ornare lectus sit amet. Enim ut tellus elementum sagittis vitae. Turpis tincidunt id aliquet risus. Non diam phasellus vestibulum lorem sed risus ultricies.</p>
+
+				<p>Proin gravida hendrerit lectus a. Ante in nibh mauris cursus mattis molestie. Nunc consequat interdum varius sit amet. Suscipit tellus mauris a diam maecenas sed enim ut. Est ante in nibh mauris cursus mattis. Faucibus et molestie ac feugiat. At lectus urna duis convallis convallis tellus id. Eu ultrices vitae auctor eu augue. Egestas purus viverra accumsan in nisl. Facilisi etiam dignissim diam quis enim. Fames ac turpis egestas integer eget aliquet nibh praesent. Sit amet venenatis urna cursus eget nunc scelerisque viverra.</p>
+
+				<p>Ullamcorper a lacus vestibulum sed arcu non. Consequat mauris nunc congue nisi vitae suscipit tellus mauris a. Iaculis at erat pellentesque adipiscing commodo elit. Mauris ultrices eros in cursus. Sed turpis tincidunt id aliquet risus feugiat in ante. Lectus mauris ultrices eros in cursus turpis massa tincidunt. Tincidunt augue interdum velit euismod in pellentesque. Erat imperdiet sed euismod nisi porta lorem mollis aliquam ut. Pulvinar mattis nunc sed blandit libero volutpat sed. Donec pretium vulputate sapien nec sagittis aliquam malesuada. Eget felis eget nunc lobortis mattis aliquam faucibus. Porttitor eget dolor morbi non arcu risus quis varius quam. Mattis rhoncus urna neque viverra justo nec. Pretium aenean pharetra magna ac placerat. Pharetra diam sit amet nisl suscipit. Tincidunt vitae semper quis lectus nulla. In hac habitasse platea dictumst vestibulum rhoncus. Mattis enim ut tellus elementum sagittis vitae. Condimentum vitae sapien pellentesque habitant morbi tristique.</p>
+				<!--END OF CONTENT-->
+
+				<!--Tablet / Desktop Navigation-->
+				<ul id="nav" class="col-8">
+					<li><a href="../../../home/index.html">Home</a></li>
+					<div class="dropdown">
+					  <button class="dropbtn" onclick="dropDown(1)">Academic Entries <i>▼</i></button>
+						<div class="dropdown-content" id="myDropdown1">
+							<a href="#">Freshman</a>
+							<a href="#">Sophomore</a>
+							<a href="#">Junior</a>
+							<a href="#">Senior</a>
+						</div>
+					</div>
+					<div class="dropdown">
+						<button class="dropbtn" onclick="dropDown(2)">Vocational Entries <i>▼</i></button>
+						<div class="dropdown-content" id="myDropdown2">
+							<a href="#">Exploratory</a>
+							<a href="#">Freshman</a>
+							<a href="#">Sophomore</a>
+							<a href="#">Junior</a>
+							<a href="#">Senior</a>
+						</div>
+					</div>  
+					<li><a href="../../../galleries/qualifications/index.html">Qualifications</a></li>
+					<li><a href="../../../galleries/awards/index.html">Awards</a></li>
+					<li><a href="../../../galleries/certifications/index.html">Certifications</a></li>
+					<div class="dropdown">
+					  <button class="dropbtn" onclick="dropDown(3)">Work Samples <i>▼</i></button>
+						<div class="dropdown-content" id="myDropdown3">
+							<a href="#">Freshman</a>
+							<a href="#">Sophomore</a>
+							<a href="#">Junior</a>
+							<a href="#">Senior</a>
+						</div>
+					</div> 
+					<li><a href="../../../competency_list/PW_Competency_List.xlsx">Competency List</a></li>
+				</ul>
+			</div>
+
+			<!--Mobile Navigation-->
+			<div id="dropnav" class="overlay">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<div class="overlay-content">
+						<a href="../../../../home/index.html">Home</a>						
+						<a href="#" onClick="showMenu(1)">Academic Entries <i>▼</i></a>
+						<div id="mobileDrop1" class="allMobile" style="display:none;">
+							<a href="#">Freshman</a>
+							<a href="#">Sophomore</a>
+							<a href="#">Junior</a>
+							<a href="#">Senior</a>
+						</div>
+						<a href="#" onClick="showMenu(2)">Vocational Entries <i>▼</i></a>
+						<div id="mobileDrop2" class="allMobile" style="display:none;">
+							<a href="#">Exploratory</a>
+							<a href="#">Freshman</a>
+							<a href="#">Sophomore</a>
+							<a href="#">Junior</a>
+							<a href="#">Senior</a>
+						</div>
+						<a href="../../../galleries/qualifications/index.html">Qualifications</a>
+						<a href="../../../galleries/awards/index.html">Awards</a>
+						<a href="../../../galleries/certifications/index.html">Certifications</a>
+						<a href="#" onClick="showMenu(3)">Work Samples <i>▼</i></a>
+						<div id="mobileDrop3" class="allMobile" style="display:none;">
+							<a href="#">Freshman</a>
+							<a href="#">Sophomore</a>
+							<a href="#">Junior</a>
+							<a href="#">Senior</a>
+						</div>
+						<a href="../../../../competency_list/PW_Competency_List.xlsx">Competency List</a>
+					</div>
+			</div>
+
+			<!--Javascript-->
+			<script>
+			function openNav() {
+				document.getElementById("dropnav").style.width = "100%";
+			}
+
+			function closeNav() {
+				document.getElementById("dropnav").style.width = "0%";
+			}
+			</script>
+		</div>
+	</body>
+</html>
